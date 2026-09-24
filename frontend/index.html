@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MockMate | Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="login">
+  <div class="page-shell">
+    <nav class="navbar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">M</span>
+        <span>MockMate</span>
+      </a>
+      <div class="nav-actions">
+        <a class="nav-link active" href="index.html">Login</a>
+        <a class="nav-link" href="signup.html">Sign Up</a>
+      </div>
+    </nav>
+
+    <main class="landing-stack">
+      <section class="auth-layout">
+        <section class="hero-panel">
+          <span class="eyebrow">Interview practice platform</span>
+          <h1>Walk into your next interview feeling prepared.</h1>
+          <p>
+            Practice HR and technical questions, track your responses, and review
+            clear feedback with a clean, distraction-free interface.
+          </p>
+
+          <div class="feature-grid">
+            <article class="mini-card">
+              <i class="fa-solid fa-play"></i>
+              <div>
+                <h3>Guided flow</h3>
+                <p>Move through questions one at a time with a simple timer.</p>
+              </div>
+            </article>
+            <article class="mini-card">
+              <i class="fa-solid fa-chart-line"></i>
+              <div>
+                <h3>Instant review</h3>
+                <p>See answer quality and a quick score right after finishing.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="card auth-card">
+          <div class="card-header">
+            <span class="icon-badge">
+              <i class="fa-solid fa-user-lock"></i>
+            </span>
+            <div>
+              <h2>Welcome back</h2>
+              <p>Log in to continue your mock interview practice.</p>
+            </div>
+          </div>
+
+          <form id="loginForm" class="form-stack">
+            <label class="input-group">
+              <span>Email Address</span>
+              <div class="input-wrap">
+                <i class="fa-regular fa-user"></i>
+                <input id="loginEmail" type="email" placeholder="you@example.com" required>
+              </div>
+            </label>
+
+            <label class="input-group">
+              <span>Password</span>
+              <div class="input-wrap">
+                <i class="fa-solid fa-lock"></i>
+                <input id="loginPassword" type="password" placeholder="Enter your password" required>
+              </div>
+            </label>
+
+            <button class="btn btn-primary btn-block" type="submit">
+              <i class="fa-solid fa-right-to-bracket"></i>
+              Login
+            </button>
+
+            <p id="loginMessage" class="status-message" aria-live="polite"></p>
+          </form>
+
+          <p class="helper-text">
+            New here? <a href="signup.html">Create your MockMate account</a>
+          </p>
+        </section>
+      </section>
+
+      <section class="marketing-section reveal-on-scroll" id="effectiveInterviews">
+        <div class="section-heading">
+          <span class="eyebrow">Why it works</span>
+          <h2>What Makes Our Mock Interviews Effective?</h2>
+          <p>
+            Every practice session is designed to feel focused, realistic, and easy to repeat so learners can improve with confidence.
+          </p>
+        </div>
+
+        <div class="effective-grid">
+          <article class="effective-card">
+            <span class="effective-icon">
+              <i class="fa-solid fa-diagram-project"></i>
+            </span>
+            <h3>Structured Question Flow</h3>
+            <p>Carefully designed questions that simulate real interview patterns.</p>
+          </article>
+
+          <article class="effective-card">
+            <span class="effective-icon">
+              <i class="fa-solid fa-laptop-file"></i>
+            </span>
+            <h3>Real-Time Practice</h3>
+            <p>Practice anytime with a smooth, distraction-free interface.</p>
+          </article>
+
+          <article class="effective-card">
+            <span class="effective-icon">
+              <i class="fa-solid fa-chart-column"></i>
+            </span>
+            <h3>Performance Feedback</h3>
+            <p>Get instant feedback based on your responses.</p>
+          </article>
+
+          <article class="effective-card">
+            <span class="effective-icon">
+              <i class="fa-solid fa-arrow-trend-up"></i>
+            </span>
+            <h3>Progress Tracking</h3>
+            <p>Track your improvement across multiple sessions.</p>
+          </article>
+
+          <article class="effective-card">
+            <span class="effective-icon">
+              <i class="fa-regular fa-clock"></i>
+            </span>
+            <h3>Time-Based Practice</h3>
+            <p>Improve speed and confidence with timed questions.</p>
+          </article>
+
+          <article class="effective-card">
+            <span class="effective-icon">
+              <i class="fa-solid fa-file-lines"></i>
+            </span>
+            <h3>Resume-Based Simulation</h3>
+            <p>Practice questions tailored to your profile.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="marketing-section trust-section reveal-on-scroll" id="successStories">
+        <div class="section-heading">
+          <span class="eyebrow">Trusted outcomes</span>
+          <h2>Our Learners Are Now At</h2>
+          <p>
+            MockMate is built to help candidates sharpen their answers, build confidence, and show up stronger in real interviews.
+          </p>
+        </div>
+
+        <div class="company-badge-row" aria-label="Company badges">
+          <span class="company-badge">Amazon</span>
+          <span class="company-badge">Uber</span>
+          <span class="company-badge">Google</span>
+          <span class="company-badge">Microsoft</span>
+        </div>
+
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <div class="testimonial-top">
+              <span class="avatar-circle">RS</span>
+              <div>
+                <h3>Rahul Sharma</h3>
+                <span class="testimonial-role">Frontend Developer Candidate</span>
+              </div>
+            </div>
+            <p>
+              MockMate helped me gain confidence and organize my answers better. The timed sessions felt close to a real screening round.
+            </p>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-top">
+              <span class="avatar-circle">AP</span>
+              <div>
+                <h3>Ananya Patel</h3>
+                <span class="testimonial-role">Product Analyst Candidate</span>
+              </div>
+            </div>
+            <p>
+              I used the HR practice flow before interviews and it made my responses much more clear, calm, and structured.
+            </p>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-top">
+              <span class="avatar-circle">VK</span>
+              <div>
+                <h3>Vikram Khanna</h3>
+                <span class="testimonial-role">Software Engineer Candidate</span>
+              </div>
+            </div>
+            <p>
+              The technical track gave me a reliable way to practice web fundamentals repeatedly without overcomplicating the experience.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MockMate | Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="dashboard">
+  <div class="page-shell">
+    <nav class="navbar">
+      <a class="brand" href="dashboard.html">
+        <span class="brand-mark">M</span>
+        <span>MockMate</span>
+      </a>
+      <div class="nav-actions">
+        <a class="nav-link active" href="dashboard.html">
+          <i class="fa-solid fa-house"></i>
+          Dashboard
+        </a>
+        <button class="nav-link nav-button" id="logoutBtn" type="button">
+          <i class="fa-solid fa-right-from-bracket"></i>
+          Logout
+        </button>
+      </div>
+    </nav>
+
+    <main class="dashboard-layout">
+      <section class="hero-banner card">
+        <div>
+          <span class="eyebrow">Your practice space</span>
+          <h1 id="welcomeMessage">Welcome back</h1>
+          <p>
+            Build stronger answers, improve clarity, and review your performance
+            after each mock interview session. Choose an interview track based on
+            the kind of practice you want today.
+          </p>
+        </div>
+        <div class="hero-actions">
+          <button id="logoutHeroBtn" class="btn btn-secondary" type="button">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+          </button>
+        </div>
+      </section>
+
+      <section class="track-grid">
+        <article class="card track-card">
+          <div class="track-heading">
+            <span class="icon-badge">
+              <i class="fa-solid fa-user-tie"></i>
+            </span>
+            <div>
+              <span class="track-chip">HR Questions</span>
+              <h2>Practice communication and behavioral answers</h2>
+            </div>
+          </div>
+          <p class="track-copy">
+            Work through common introductions, motivation, teamwork, and challenge-based interview prompts.
+          </p>
+          <ul class="feature-list">
+            <li>Behavioral and self-introduction questions only.</li>
+            <li>Great for confidence, structure, and storytelling practice.</li>
+            <li>5 curated HR-focused questions.</li>
+          </ul>
+          <div class="track-footer">
+            <span id="hrTrackMeta" class="track-meta">No HR attempt yet.</span>
+            <button id="startHrInterviewBtn" class="btn btn-primary" type="button">
+              <i class="fa-solid fa-play"></i>
+              Start HR Interview
+            </button>
+          </div>
+        </article>
+
+        <article class="card track-card">
+          <div class="track-heading">
+            <span class="icon-badge">
+              <i class="fa-solid fa-code"></i>
+            </span>
+            <div>
+              <span class="track-chip">Technical Questions</span>
+              <h2>Practice frontend and web fundamentals</h2>
+            </div>
+          </div>
+          <p class="track-copy">
+            Focus on HTML, CSS, JavaScript, performance, debugging, and user experience thinking.
+          </p>
+          <ul class="feature-list">
+            <li>Core frontend technical concepts and practical scenarios.</li>
+            <li>Great for junior to mid-level technical screening practice.</li>
+            <li>5 curated technical questions.</li>
+          </ul>
+          <div class="track-footer">
+            <span id="technicalTrackMeta" class="track-meta">No technical attempt yet.</span>
+            <button id="startTechnicalInterviewBtn" class="btn btn-primary" type="button">
+              <i class="fa-solid fa-play"></i>
+              Start Technical Interview
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <section class="dashboard-grid">
+        <article class="card overview-card">
+          <div class="card-header compact">
+            <span class="icon-badge light">
+              <i class="fa-solid fa-chart-simple"></i>
+            </span>
+            <div>
+              <h2>Latest Result</h2>
+              <p>Your most recent interview score and status.</p>
+            </div>
+          </div>
+          <div class="metric-block">
+            <strong id="latestScore">No attempts yet</strong>
+            <span id="latestSummary">Start an interview to see feedback here.</span>
+          </div>
+        </article>
+
+        <article class="card overview-card">
+          <div class="card-header compact">
+            <span class="icon-badge light">
+              <i class="fa-solid fa-list-check"></i>
+            </span>
+            <div>
+              <h2>Session Details</h2>
+              <p>Quick reminders before you begin your next practice round.</p>
+            </div>
+          </div>
+          <ul class="feature-list">
+            <li>Choose either the HR track or the Technical track.</li>
+            <li>Each question includes a countdown timer.</li>
+            <li>Your responses are saved automatically in your browser.</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

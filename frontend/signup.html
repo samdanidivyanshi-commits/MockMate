@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MockMate | Sign Up</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="signup">
+  <div class="page-shell">
+    <nav class="navbar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">M</span>
+        <span>MockMate</span>
+      </a>
+      <div class="nav-actions">
+        <a class="nav-link" href="index.html">Login</a>
+        <a class="nav-link active" href="signup.html">Sign Up</a>
+      </div>
+    </nav>
+
+    <main class="auth-layout auth-layout-reverse">
+      <section class="card auth-card">
+        <div class="card-header">
+          <span class="icon-badge">
+            <i class="fa-solid fa-user-plus"></i>
+          </span>
+          <div>
+            <h2>Create account</h2>
+            <p>Start practicing interviews in less than a minute.</p>
+          </div>
+        </div>
+
+        <form id="signupForm" class="form-stack">
+          <label class="input-group">
+            <span>Email Address</span>
+            <div class="input-wrap">
+              <i class="fa-regular fa-user"></i>
+              <input id="signupEmail" type="email" placeholder="you@example.com" required>
+            </div>
+          </label>
+
+          <label class="input-group">
+            <span>Password</span>
+            <div class="input-wrap">
+              <i class="fa-solid fa-lock"></i>
+              <input id="signupPassword" type="password" placeholder="Create a password" minlength="6" required>
+            </div>
+          </label>
+
+          <button class="btn btn-primary btn-block" type="submit">
+            <i class="fa-solid fa-user-plus"></i>
+            Sign Up
+          </button>
+
+          <p id="signupMessage" class="status-message" aria-live="polite"></p>
+        </form>
+
+        <p class="helper-text">
+          Already have an account? <a href="index.html">Log in here</a>
+        </p>
+      </section>
+
+      <section class="hero-panel hero-panel-tight">
+        <span class="eyebrow">Why MockMate</span>
+        <h1>Short practice sessions, sharper interview answers.</h1>
+        <p>
+          Save your progress locally, focus on concise responses, and build
+          confidence with a polished mock interview flow.
+        </p>
+
+        <div class="stats-row">
+          <article class="stat-tile">
+            <strong>5</strong>
+            <span>Curated questions</span>
+          </article>
+          <article class="stat-tile">
+            <strong>100%</strong>
+            <span>Browser-based</span>
+          </article>
+          <article class="stat-tile">
+            <strong>0</strong>
+            <span>Setup steps</span>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

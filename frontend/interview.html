@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MockMate | Interview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="interview">
+  <div class="page-shell">
+    <nav class="navbar">
+      <a class="brand" href="dashboard.html">
+        <span class="brand-mark">M</span>
+        <span>MockMate</span>
+      </a>
+      <div class="nav-actions">
+        <a class="nav-link" href="dashboard.html">
+          <i class="fa-solid fa-house"></i>
+          Dashboard
+        </a>
+        <button class="nav-link nav-button" id="logoutBtn" type="button">
+          <i class="fa-solid fa-right-from-bracket"></i>
+          Logout
+        </button>
+      </div>
+    </nav>
+
+    <main class="interview-layout">
+      <section class="card interview-topbar">
+        <div>
+          <span class="eyebrow">Mock interview in progress</span>
+          <p id="interviewCategory" class="track-chip track-chip-large">HR Interview</p>
+          <h1 id="progressLabel">Question 1 / 5</h1>
+        </div>
+        <div class="timer-badge" id="timerDisplay">
+          <i class="fa-regular fa-clock"></i>
+          <span>60s</span>
+        </div>
+      </section>
+
+      <section class="card progress-card">
+        <div class="progress-copy">
+          <span>Progress</span>
+          <strong id="progressText">20%</strong>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+      </section>
+
+      <section class="card question-card">
+        <div class="question-meta">
+          <span class="icon-badge light">
+            <i class="fa-solid fa-circle-question"></i>
+          </span>
+          <span>Interview Question</span>
+        </div>
+
+        <h2 id="questionText">Loading question...</h2>
+        <p class="question-hint">Keep your answer clear, structured, and specific.</p>
+
+        <label class="textarea-group" for="answerInput">Your Answer</label>
+        <textarea
+          id="answerInput"
+          rows="8"
+          placeholder="Type your answer here..."
+        ></textarea>
+
+        <div class="question-actions">
+          <span class="autosave-hint">Answers save automatically while you type.</span>
+          <button id="nextQuestionBtn" class="btn btn-primary" type="button">
+            Next Question
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
